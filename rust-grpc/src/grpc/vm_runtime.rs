@@ -5,8 +5,8 @@ pub struct CreateRequest {
     pub project_id: u64,
     #[prost(string, tag = "2")]
     pub content: ::prost::alloc::string::String,
-    #[prost(string, tag = "3")]
-    pub exp_param: ::prost::alloc::string::String,
+    #[prost(string, repeated, tag = "3")]
+    pub exp_params: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
 }
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
