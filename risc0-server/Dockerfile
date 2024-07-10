@@ -1,4 +1,4 @@
-FROM rust:1.76.0 AS builder
+FROM rust:1.79 AS builder
 
 RUN update-ca-certificates
 
@@ -23,7 +23,7 @@ RUN cd risc0-server && cargo build --release
 
 
 
-FROM rust:1.76.0
+FROM rust:1.79
 
 RUN apt update && apt -y install libpq-dev libpq5
 

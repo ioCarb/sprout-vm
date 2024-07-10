@@ -1,4 +1,4 @@
-FROM rust:1.76.0 AS builder
+FROM rust:1.79 AS builder
 
 RUN update-ca-certificates
 
